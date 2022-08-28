@@ -14,9 +14,25 @@
   
   <properties>
 	<!-- versions -->
-	<sonar.host.url>http://localhost:9000/</sonar.host.url>
+	<sonar.host.url>http://54.219.118.148:9000/</sonar.host.url>
+	<sonar.login>11f7746712813bcebde9846cac87e50959bc0f11</sonar.login>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 </properties>
   
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>walmart-release</name>
+	      <url>http://52.53.252.77:8081/repository/walmart-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>ear-snapshot </name>
+	      <url>http://52.53.252.77:8081/repository/ear-project/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 </project>
